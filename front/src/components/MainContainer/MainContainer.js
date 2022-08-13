@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../../layouts/Layout";
 
-function Main() {
+function MainContainer() {
     return(
-        <Layout>
-        </Layout>
+        <div>
+            asdf
+        </div>
     )
 }
-export default Main;
+export default MainContainer;

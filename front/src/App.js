@@ -2,8 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import MainPage from './pages/MainPage';
 import { Globalstyle } from './globalstyle/Globalstyle';
+
+import MainPage from './pages/MainPage';
+import Page1Page from './pages/Page1Page';
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <Globalstyle />
         <Routes>
           <Route path='/' element={<MainPage />} />
+          <Route path='/page1' element={<Page1Page />} />
         </Routes>
       </div>
     </BrowserRouter>
