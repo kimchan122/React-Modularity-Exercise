@@ -1,11 +1,12 @@
 import React from "react";
-import Main from "../components/Main/Main";
+import Layout from "../layouts/Layout";
+import MainContainer from "../components/MainContainer/MainContainer";
 
 function MainPage() {
     return(
-        <Main>
-            asdf
-        </Main>
+        <Layout>
+            <MainContainer/>
+        </Layout>
     )
 }
 export default MainPage;

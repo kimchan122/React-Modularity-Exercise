@@ -1,8 +1,10 @@
 import React from "react";
+import Layout from "../../layouts/Layout";
 
 function Main() {
     return(
-        <h1>asdf</h1>
+        <Layout>
+        </Layout>
     )
 }
 export default Main;
