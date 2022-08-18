@@ -1,9 +1,16 @@
 import styled from 'styled-components';
-import BG01 from "../../assets/bg01.jpeg";
 
 export const BGContainer = styled.div`
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+`
+
+export const BGContainer_Img = styled.img.attrs({alt: 'background image'})`
     width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-	background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    object-fit: cover; 
+    background-size: contain;
 `
