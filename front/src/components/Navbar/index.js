@@ -1,5 +1,5 @@
 import React from "react";
-import {Nav, Logo} from "./style";
+import { Nav, LogoTitle, NavContainer, NavElement, MarginRight } from "./style";
 import { Link, NavLink } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 //import Nav from 'react-bootstrap/Nav';
@@ -9,9 +9,22 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export default function Navibar() {
     return (
         <Nav>
-            <Logo>
-                asdfasdf
-            </Logo>
+            {/* <LogoImage></LogoImage> */}
+            <LogoTitle>
+                UNCHAIN
+            </LogoTitle>
+            <NavContainer>
+                <NavElement>
+                    Home
+                </NavElement>
+                <NavElement>
+                    About
+                </NavElement>
+                <NavElement>
+                    Contact
+                </NavElement>
+                <MarginRight/>
+            </NavContainer>
         </Nav>
         // <Navbar bg="light" expand="lg">
         //     <Container>
