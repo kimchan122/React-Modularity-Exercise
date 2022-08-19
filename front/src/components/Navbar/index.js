@@ -11,43 +11,44 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 export default function Navibar() {
     return (
         <NavInit>
-        <Navbar key="md" expand="md" bg="dark" variant="dark">
-            <Navi>
-                <Navbar.Brand href="/">
-                    <LogoTitle>
-                        UNCHAIN
-                    </LogoTitle>
-                </Navbar.Brand>
+            <Navbar key="md" expand="md" bg="dark" variant="dark">
+                <Navi>
+                    <StyledLink to="/" >
+                        <LogoTitle>
+                            UNCHAIN
+                        </LogoTitle>
+                    </StyledLink>
 
-                <NavContainer>
-                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
-                </NavContainer>
-                <NavContainerText>
-                    <Navbar.Offcanvas
-                        id={`offcanvasNavbar-expand-md`}
-                        aria-labelledby={`offcanvasNavbarLabel-expand-md`}
-                        placement="end"
-                    >
-                        <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-sm`}>
-                                UNCHAIN
-                            </Offcanvas.Title>
-                        </Offcanvas.Header>
-                        <Offcanvas.Body>
-                            <Nav className="justify-content-center flex-grow-1">
-                                {/* <Nav.Link href="/">Home</Nav.Link>
+
+                    <NavContainer>
+                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
+                    </NavContainer>
+                    <NavContainerText>
+                        <Navbar.Offcanvas
+                            id={`offcanvasNavbar-expand-md`}
+                            aria-labelledby={`offcanvasNavbarLabel-expand-md`}
+                            placement="end"
+                        >
+                            <Offcanvas.Header closeButton>
+                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-sm`}>
+                                    UNCHAIN
+                                </Offcanvas.Title>
+                            </Offcanvas.Header>
+                            <Offcanvas.Body>
+                                <Nav className="justify-content-center flex-grow-1">
+                                    {/* <Nav.Link href="/">Home</Nav.Link>
                                  */}
-                                <StyledLink to="/" >Home</StyledLink>
-                                <StyledLink to="/about" >About</StyledLink>
-                                <StyledLink to="/contact" >Contact</StyledLink>
-                                {/* <Nav.Link href="/about">About</Nav.Link>
+                                    <StyledLink to="/" >Home</StyledLink>
+                                    <StyledLink to="/about" >About</StyledLink>
+                                    <StyledLink to="/contact" >Contact</StyledLink>
+                                    {/* <Nav.Link href="/about">About</Nav.Link>
                                 <Nav.Link href="/contact">Conatct</Nav.Link> */}
-                            </Nav>
-                        </Offcanvas.Body>
-                    </Navbar.Offcanvas>
-                </NavContainerText>
-            </Navi>
-        </Navbar>
+                                </Nav>
+                            </Offcanvas.Body>
+                        </Navbar.Offcanvas>
+                    </NavContainerText>
+                </Navi>
+            </Navbar>
         </NavInit>
     )
 }
