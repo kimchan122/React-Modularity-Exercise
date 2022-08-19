@@ -18,9 +18,13 @@ export const Nav = styled.div`
     left:0px;
     height: 64px;
     width: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.7250384024577573) 0%, rgba(0,0,0,0) 100%);
-    animation: ${boxFade} 2s 1s linear alternate;
+    background: rgb(20,20,20,0.5);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    color: whitesmoke;
+    //filter: blur(5px);
+    //background: linear-gradient(180deg, rgba(0,0,0,0.7250384024577573) 0%, rgba(0,0,0,0) 100%);
+    //animation: ${boxFade} 2s 1s linear alternate;
 `
 
 export const LogoTitle = styled.div`
