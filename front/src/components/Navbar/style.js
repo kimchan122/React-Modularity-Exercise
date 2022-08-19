@@ -67,6 +67,7 @@ export const MarginRight = styled.div`
 
 export const StyledLink = styled(Link)`
     margin-top: 5px;
+    margin-right: 20px;
     color: #AAAAAA;
     &:focus, &:visited, &:link, &:active {
         text-decoration: none;
