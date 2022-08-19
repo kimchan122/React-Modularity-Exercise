@@ -66,10 +66,12 @@ export const MarginRight = styled.div`
 `
 
 export const StyledLink = styled(Link)`
-    margin-bottom: 10px;
-    text-decoration: none;
-    &:focus, &:hover, &:visited, &:link, &:active {
+    margin-top: 5px;
+    color: #AAAAAA;
+    &:focus, &:visited, &:link, &:active {
         text-decoration: none;
     }
-
+    &:hover{
+        color: #000000;
+    }
 `

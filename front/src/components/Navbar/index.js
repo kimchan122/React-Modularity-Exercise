@@ -37,9 +37,9 @@ export default function Navibar() {
                             <Nav className="justify-content-center flex-grow-1">
                                 {/* <Nav.Link href="/">Home</Nav.Link>
                                  */}
-                                <StyledLink to="/" style={{color: '#000'}}>Home</StyledLink>
-                                <StyledLink to="/about" style={{color: '#000'}}>About</StyledLink>
-                                <StyledLink to="/contact" style={{color: '#000'}}>Contact</StyledLink>
+                                <StyledLink to="/" >Home</StyledLink>
+                                <StyledLink to="/about" >About</StyledLink>
+                                <StyledLink to="/contact" >Contact</StyledLink>
                                 {/* <Nav.Link href="/about">About</Nav.Link>
                                 <Nav.Link href="/contact">Conatct</Nav.Link> */}
                             </Nav>
