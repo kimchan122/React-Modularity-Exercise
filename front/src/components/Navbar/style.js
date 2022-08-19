@@ -54,6 +54,7 @@ export const NavElement = styled.div`
     justify-content: center;
     margin-left: 15px;
     margin-right: 15px;
+    color: whitesmoke
 `
 
 export const MarginRight = styled.div`

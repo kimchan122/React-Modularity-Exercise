@@ -15,6 +15,9 @@ const MainPage = () => {
                     {/* <BGBlank></BGBlank> */}
                     <BGText>
                         <Fade bottom>
+                            <div>asdf</div>
+                        </Fade>
+                        <Fade bottom>
                             대충 멋진 말
                         </Fade>
                     </BGText>
@@ -25,7 +28,13 @@ const MainPage = () => {
                     {/* <BGBlank></BGBlank> */}
                     <BGText>
                         <Fade bottom>
-                            대충 멋진 목표
+                            대충
+                        </Fade>
+                        <Fade bottom>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;멋진
+                        </Fade>
+                        <Fade bottom>
+                            목표&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </Fade>
                     </BGText>
                 </BGContainer_Img>

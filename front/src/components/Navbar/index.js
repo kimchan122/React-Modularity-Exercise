@@ -15,15 +15,14 @@ export default function Navibar() {
             </LogoTitle>
             <NavContainer>
                 <NavElement>
-                    {/* <a href="https://www.google.co.kr/">Home</a> */}
+                    <a href="/">Home</a>
                 </NavElement>
                 <NavElement>
-                    About
                 </NavElement>
                 <NavElement>
                     Contact
                 </NavElement>
-                <MarginRight/>
+                <MarginRight />
             </NavContainer>
         </Nav>
         // <Navbar bg="light" expand="lg">

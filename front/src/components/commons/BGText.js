@@ -7,9 +7,8 @@ export const BGText = styled.div`
     font-weight: 900;
     color: white;
     vertical-align: middle;
-    line-height: 100vh;
-    //top: 50%;
+    top: 50%;
     //left: 50%;
     //bottom: 50%;
-    //transform: translateY(-100%);
+    transform: translateY(-50%);
 `
