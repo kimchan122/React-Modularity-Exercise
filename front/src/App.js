@@ -13,8 +13,8 @@ function App() {
       <div >
         <Navbar />
         <Routes>
-          <Route path="#/" element={<MainPage />} />
-          <Route path="#/about" element={<AboutPage />} />
+          <Route path="" element={<MainPage />} />
+          <Route path="/#/about" element={<AboutPage />} />
         </Routes>
       </div>
     </HashRouter>

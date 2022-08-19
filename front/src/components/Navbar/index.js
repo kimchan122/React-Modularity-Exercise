@@ -15,10 +15,10 @@ export default function Navibar() {
             </LogoTitle>
             <NavContainer>
                 <NavElement>
-                    <a href="#/">Home</a>
+                    <a href="/">Home</a>
                 </NavElement>
                 <NavElement>
-                    <a href="#/about">About</a>
+                    <a href="/#/about">About</a>
                 </NavElement>
                 <NavElement>
                     Contact
