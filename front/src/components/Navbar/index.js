@@ -15,7 +15,7 @@ export default function Navibar() {
             </LogoTitle>
             <NavContainer>
                 <NavElement>
-                    Home
+                    {/* <a href="https://www.google.co.kr/">Home</a> */}
                 </NavElement>
                 <NavElement>
                     About

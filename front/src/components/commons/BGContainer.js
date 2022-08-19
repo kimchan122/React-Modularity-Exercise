@@ -1,16 +1,15 @@
 import styled from 'styled-components';
 
+
+
 export const BGContainer = styled.div`
-    display: flex;
     height: 100vh;
-    justify-content: center;
 `
 
-export const BGContainer_Img = styled.img.attrs({alt: 'background image'})`
-    width: 100%;
+export const BGContainer_Img = styled.div`
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(${(props) => props.src});
+    height: 100%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    object-fit: cover; 
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 `
