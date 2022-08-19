@@ -18,6 +18,7 @@ export default function Navibar() {
                     <a href="/">Home</a>
                 </NavElement>
                 <NavElement>
+                    <a href="/about">About</a>
                 </NavElement>
                 <NavElement>
                     Contact
