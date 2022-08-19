@@ -34,9 +34,9 @@ export default function Navibar() {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-center flex-grow-1">
-                                <Nav.Link href="#">Home</Nav.Link>
-                                <Nav.Link href="#about">About</Nav.Link>
-                                <Nav.Link href="#contact">Conatct</Nav.Link>
+                                <Nav.Link href="/">Home</Nav.Link>
+                                <Nav.Link href="/#/about">About</Nav.Link>
+                                <Nav.Link href="/#/contact">Conatct</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>

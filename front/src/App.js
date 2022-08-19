@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 
 import MainPage from "./pages/MainPage";
 import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <div >
         <Navbar />
         <Routes>
-          <Route path="" element={<MainPage />} />
+          <Route path="/" element={<MainPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </HashRouter>
