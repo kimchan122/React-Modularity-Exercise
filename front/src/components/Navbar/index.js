@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { StyledLink } from "./style";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 export default function Navibar() {
@@ -34,9 +35,13 @@ export default function Navibar() {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-center flex-grow-1">
-                                <Nav.Link href="/">Home</Nav.Link>
-                                <Nav.Link href="/#/about">About</Nav.Link>
-                                <Nav.Link href="/#/contact">Conatct</Nav.Link>
+                                {/* <Nav.Link href="/">Home</Nav.Link>
+                                 */}
+                                <StyledLink to="/" style={{color: '#000'}}>Home</StyledLink>
+                                <StyledLink to="/about" style={{color: '#000'}}>About</StyledLink>
+                                <StyledLink to="/contact" style={{color: '#000'}}>Contact</StyledLink>
+                                {/* <Nav.Link href="/about">About</Nav.Link>
+                                <Nav.Link href="/contact">Conatct</Nav.Link> */}
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>

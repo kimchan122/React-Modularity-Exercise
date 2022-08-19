@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 
 export const NavInit = styled.div`
     position: fixed;
@@ -62,4 +63,13 @@ export const NavElement = styled.div`
 export const MarginRight = styled.div`
     display: inline-block;
     margin-right: 15px;
+`
+
+export const StyledLink = styled(Link)`
+    margin-bottom: 10px;
+    text-decoration: none;
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+
 `
