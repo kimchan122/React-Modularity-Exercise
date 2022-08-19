@@ -11,54 +11,14 @@ import { Fade } from 'react-awesome-reveal';
 import { Slide } from "react-awesome-reveal";
 import Carousel from 'react-bootstrap/Carousel';
 import '../App.css';
+import { MainCarousel } from "../components/maincompo/MainCarousel";
 
 const MainPage = () => {
     return (
         <div className="App">
-            <BGContainer>
-                <BGContainer_Img>
-                    <Carousel>
-                        <Carousel.Item>
-                            <BGContainer>
-                                <BGContainer_Img_Ca src={BgOne}/>
-                            </BGContainer>
-                            <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <BGContainer>
-                                <BGContainer_Img_Ca src={BgTwo}/>
-                            </BGContainer>
-                            <Carousel.Caption>
-                                <h3>Second slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <BGContainer>
-                                <BGContainer_Img_Ca src={BgThree}/>
-                            </BGContainer>
-                            <Carousel.Caption>
-                                <h3>Second slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
-                </BGContainer_Img>
+            
+            <MainCarousel/>
 
-                {/* <BGContainer_Img src={BgOne}>
-                    <BGTextContainer>
-                        <Fade triggerOnce={true}>
-                            <BGText>asdfasdfasdf</BGText>
-                        </Fade>
-                        <Fade triggerOnce={true}>
-                            <BGText>대충 멋진 말</BGText>
-                        </Fade>
-                    </BGTextContainer>
-                </BGContainer_Img> */}
-            </BGContainer>
             <BGContainer>
                 <BGContainer_Img src={BgTwo}>
                     <BGTextContainer>
