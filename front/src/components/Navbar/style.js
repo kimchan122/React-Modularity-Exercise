@@ -76,3 +76,7 @@ export const StyledLink = styled(Link)`
         color: #000000;
     }
 `
+
+export const OffcanvasSNS = styled.div`
+  
+`

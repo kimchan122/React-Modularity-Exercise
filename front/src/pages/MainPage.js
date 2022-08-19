@@ -4,18 +4,51 @@ import BgOne from "../assets/bg01.jpeg";
 import BgTwo from "../assets/bg02.jpeg";
 import BgThree from "../assets/bg03.jpeg";
 import styled from 'styled-components';
-import { BGContainer, BGContainer_Img } from '../components/commons/BGContainer';
+import { BGContainer, BGContainer_Img, BGContainer_Img_Ca } from '../components/commons/BGContainer';
 import { BGText, BGTextContainer } from '../components/commons/BGText';
 import { BGBlank } from "../components/commons/BGBlank";
 import { Fade } from 'react-awesome-reveal';
+import { Slide } from "react-awesome-reveal";
+import Carousel from 'react-bootstrap/Carousel';
 import '../App.css';
 
 const MainPage = () => {
     return (
         <div className="App">
             <BGContainer>
-                <BGContainer_Img src={BgOne}>
-                    {/* <BGBlank></BGBlank> */}
+                <BGContainer_Img>
+                    <Carousel>
+                        <Carousel.Item>
+                            <BGContainer>
+                                <BGContainer_Img_Ca src={BgOne}/>
+                            </BGContainer>
+                            <Carousel.Caption>
+                                <h3>First slide label</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                        <BGContainer>
+                                <BGContainer_Img_Ca src={BgTwo}/>
+                            </BGContainer>
+                            <Carousel.Caption>
+                                <h3>Second slide label</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <BGContainer>
+                                <BGContainer_Img_Ca src={BgThree}/>
+                            </BGContainer>
+                            <Carousel.Caption>
+                                <h3>Second slide label</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                </BGContainer_Img>
+
+                {/* <BGContainer_Img src={BgOne}>
                     <BGTextContainer>
                         <Fade triggerOnce={true}>
                             <BGText>asdfasdfasdf</BGText>
@@ -24,7 +57,7 @@ const MainPage = () => {
                             <BGText>대충 멋진 말</BGText>
                         </Fade>
                     </BGTextContainer>
-                </BGContainer_Img>
+                </BGContainer_Img> */}
             </BGContainer>
             <BGContainer>
                 <BGContainer_Img src={BgTwo}>
@@ -43,7 +76,6 @@ const MainPage = () => {
             </BGContainer>
             <BGContainer>
                 <BGContainer_Img src={BgThree}>
-                    {/* <BGBlank></BGBlank> */}
                     <BGTextContainer>
                         <Fade triggerOnce={true}>
                             <BGText>멋진</BGText>

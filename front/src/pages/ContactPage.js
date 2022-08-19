@@ -10,9 +10,20 @@ import { Fade } from 'react-awesome-reveal';
 const ContactPage = () => {
     return (
         <div className="App">
-            <BGContainer className="home-sections">
+            <BGContainer>
                 <BGContainer_Img src={BgTwo}>
-                    {/* <BGBlank></BGBlank> */}
+                    <BGTextContainer>
+                        <Fade triggerOnce={true}>
+                            <BGText>Contract Page</BGText>
+                        </Fade>
+                        <Fade triggerOnce={true}>
+                            <BGText>대충 소개글</BGText>
+                        </Fade>
+                    </BGTextContainer>
+                </BGContainer_Img>
+            </BGContainer>
+            <BGContainer>
+                <BGContainer_Img>
                     <BGTextContainer>
                         <Fade triggerOnce={true}>
                             <BGText>Contract Page</BGText>
