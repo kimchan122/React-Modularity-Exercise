@@ -10,7 +10,7 @@ import Fade from 'react-reveal/Fade';
 const MainPage = () => {
     return (
         <div className="App">
-            <BGContainer>
+            <BGContainer className="home-sections">
                 <BGContainer_Img src={(BG01)}>
                     {/* <BGBlank></BGBlank> */}
                     <BGText>
@@ -23,7 +23,23 @@ const MainPage = () => {
                     </BGText>
                 </BGContainer_Img>
             </BGContainer>
-            <BGContainer>
+            <BGContainer className="home-sections">
+                <BGContainer_Img src={(BG01)}>
+                    {/* <BGBlank></BGBlank> */}
+                    <BGText>
+                        <Fade bottom>
+                            대충
+                        </Fade>
+                        <Fade bottom>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;멋진
+                        </Fade>
+                        <Fade bottom>
+                            목표&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </Fade>
+                    </BGText>
+                </BGContainer_Img>
+            </BGContainer>
+            <BGContainer className="home-sections">
                 <BGContainer_Img src={(BG01)}>
                     {/* <BGBlank></BGBlank> */}
                     <BGText>

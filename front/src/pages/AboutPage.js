@@ -10,7 +10,19 @@ import Fade from 'react-reveal/Fade';
 const AboutPage = () => {
     return (
         <div className="App">
-            aboutpage
+            <BGContainer className="home-sections">
+                <BGContainer_Img src={(BG01)}>
+                    {/* <BGBlank></BGBlank> */}
+                    <BGText>
+                        <Fade bottom>
+                            <div>asdf</div>
+                        </Fade>
+                        <Fade bottom>
+                            대충 멋진 about
+                        </Fade>
+                    </BGText>
+                </BGContainer_Img>
+            </BGContainer>
         </div>
     )
 }
