@@ -1,59 +1,60 @@
 import React from "react";
 import Navbar from "../components/Navbar/index";
-import BG01 from "../assets/bg01.jpeg";
+import BgOne from "../assets/bg01.jpeg";
+import BgTwo from "../assets/bg02.jpeg";
+import BgThree from "../assets/bg03.jpeg";
 import styled from 'styled-components';
 import { BGContainer, BGContainer_Img } from '../components/commons/BGContainer';
-import { BGText } from '../components/commons/BGText';
+import { BGText, BGTextContainer } from '../components/commons/BGText';
 import { BGBlank } from "../components/commons/BGBlank";
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import '../App.css';
 
 const MainPage = () => {
     return (
         <div className="App">
-            <BGContainer className="home-sections">
-                <BGContainer_Img src={(BG01)}>
+            <BGContainer>
+                <BGContainer_Img src={BgOne}>
                     {/* <BGBlank></BGBlank> */}
-                    <BGText>
-                        <Fade bottom>
-                            <div>asdf</div>
+                    <BGTextContainer>
+                        <Fade triggerOnce={true}>
+                            <BGText>asdfasdfasdf</BGText>
                         </Fade>
-                        <Fade bottom>
-                            대충 멋진 말
+                        <Fade triggerOnce={true}>
+                            <BGText>대충 멋진 말</BGText>
                         </Fade>
-                    </BGText>
+                    </BGTextContainer>
                 </BGContainer_Img>
             </BGContainer>
-            <BGContainer className="home-sections">
-                <BGContainer_Img src={(BG01)}>
-                    {/* <BGBlank></BGBlank> */}
-                    <BGText>
-                        <Fade bottom>
-                            대충
+            <BGContainer>
+                <BGContainer_Img src={BgTwo}>
+                    <BGTextContainer>
+                        <Fade triggerOnce={true}>
+                            <BGText>멋진</BGText>
                         </Fade>
-                        <Fade bottom>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;멋진
+                        <Fade triggerOnce={true}>
+                            <BGText>문구</BGText>
                         </Fade>
-                        <Fade bottom>
-                            목표&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <Fade triggerOnce={true}>
+                            <BGText>세 줄</BGText>
                         </Fade>
-                    </BGText>
+                    </BGTextContainer>
                 </BGContainer_Img>
             </BGContainer>
-            <BGContainer className="home-sections">
-                <BGContainer_Img src={(BG01)}>
+            <BGContainer>
+                <BGContainer_Img src={BgThree}>
                     {/* <BGBlank></BGBlank> */}
-                    <BGText>
-                        <Fade bottom>
-                            대충
+                    <BGTextContainer>
+                        <Fade triggerOnce={true}>
+                            <BGText>멋진</BGText>
                         </Fade>
-                        <Fade bottom>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;멋진
+                        <Fade triggerOnce={true}>
+                            <BGText>문구</BGText>
                         </Fade>
-                        <Fade bottom>
-                            목표&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <Fade triggerOnce={true}>
+                            <BGText>서너줄</BGText>
                         </Fade>
-                    </BGText>
+                    </BGTextContainer>
                 </BGContainer_Img>
             </BGContainer>
         </div>

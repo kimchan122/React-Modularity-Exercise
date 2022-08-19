@@ -5,9 +5,11 @@ export const BGContainer = styled.div`
 `
 
 export const BGContainer_Img = styled.div`
-    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(${(props) => props.src});
+    display: block;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0)),url(${(props) => props.src});
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-size: cover;
     background-position: center;
+    align-items: center;
 `
