@@ -6,6 +6,7 @@ import { BGContainer, BGContainer_Img } from '../components/commons/BGContainer'
 import { BGText } from '../components/commons/BGText';
 import { BGBlank } from "../components/commons/BGBlank";
 import Fade from 'react-reveal/Fade';
+import '../App.css';
 
 const MainPage = () => {
     return (
