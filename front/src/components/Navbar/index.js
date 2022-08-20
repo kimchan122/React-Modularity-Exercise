@@ -9,14 +9,19 @@ import { FaDiscord, FaTelegram, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export default function Navibar() {
     const [show, setShow] = useState(false);
-    
+
     const toggleOffCanvas = () => {
-        setShow((show) => !show);
+        // if (show == true) {
+            setShow((show) => !show);
+        // }
     };
+    const toggleCloseCanvas = () => {
+        setShow(false);
+    }
 
     return (
         <NavInit>
-            <Navbar key="md" expand="md" bg="dark" variant="dark">
+            <Navbar key="sm" expand="sm" bg="dark" variant="dark">
                 <Navi>
                     <StyledLink to="/" >
                         <LogoTitle>
@@ -42,18 +47,18 @@ export default function Navibar() {
                                     UNCHAIN
                                 </Offcanvas.Title>
                                 <OffcanvasSNS>
-                                    <FaDiscord size="24" style={{marginRight: '10px'}}/>
-                                    <FaTelegram size="24" style={{marginRight: '10px'}}/>
-                                    <FaTwitter size="24" style={{marginRight: '10px'}}/>
+                                    <FaDiscord size="24" style={{ marginRight: '10px' }} />
+                                    <FaTelegram size="24" style={{ marginRight: '10px' }} />
+                                    <FaTwitter size="24" style={{ marginRight: '10px' }} />
                                     <FaGithub size="24" />
                                 </OffcanvasSNS>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-center flex-grow-1" collapseOnSelect={true}>
-                                    <StyledLink to="/" onClick={toggleOffCanvas}>Home</StyledLink>
-                                    <StyledLink to="/about" onClick={toggleOffCanvas}>About</StyledLink>
-                                    <StyledLink to="/details" onClick={toggleOffCanvas}>Details</StyledLink>
-                                    <StyledLink to="/contact" onClick={toggleOffCanvas}>Contact</StyledLink>
+                                    <StyledLink to="/" onClick={toggleCloseCanvas}>Home</StyledLink>
+                                    <StyledLink to="/about" onClick={toggleCloseCanvas}>About</StyledLink>
+                                    <StyledLink to="/details" onClick={toggleCloseCanvas}>Details</StyledLink>
+                                    <StyledLink to="/contact" onClick={toggleCloseCanvas}>Contact</StyledLink>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
