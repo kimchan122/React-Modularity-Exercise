@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavInit, Navi, LogoTitle, NavContainer, NavContainerText } from "./style";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,6 +8,12 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaDiscord, FaTelegram, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export default function Navibar() {
+    const [show, setShow] = useState(false);
+    
+    const toggleOffCanvas = () => {
+        setShow((show) => !show);
+    };
+
     return (
         <NavInit>
             <Navbar key="md" expand="md" bg="dark" variant="dark">
@@ -18,16 +24,21 @@ export default function Navibar() {
                         </LogoTitle>
                     </StyledLink>
                     <NavContainer>
-                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
+                        <Navbar.Toggle
+                            aria-controls={`offcanvasNavbar-expand-md`}
+                            onClick={toggleOffCanvas}
+                        />
                     </NavContainer>
                     <NavContainerText>
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-md`}
                             aria-labelledby={`offcanvasNavbarLabel-expand-md`}
                             placement="end"
+                            show={show}
+                            onHide={toggleOffCanvas}
                         >
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-sm`}>
+                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
                                     UNCHAIN
                                 </Offcanvas.Title>
                                 <OffcanvasSNS>
@@ -38,11 +49,11 @@ export default function Navibar() {
                                 </OffcanvasSNS>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <Nav className="justify-content-center flex-grow-1">
-                                    <StyledLink to="/" >Home</StyledLink>
-                                    <StyledLink to="/about" >About</StyledLink>
-                                    <StyledLink to="/details" >Details</StyledLink>
-                                    <StyledLink to="/contact" >Contact</StyledLink>
+                                <Nav className="justify-content-center flex-grow-1" collapseOnSelect={true}>
+                                    <StyledLink to="/" onClick={toggleOffCanvas}>Home</StyledLink>
+                                    <StyledLink to="/about" onClick={toggleOffCanvas}>About</StyledLink>
+                                    <StyledLink to="/details" onClick={toggleOffCanvas}>Details</StyledLink>
+                                    <StyledLink to="/contact" onClick={toggleOffCanvas}>Contact</StyledLink>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
