@@ -58,6 +58,7 @@ export default function Navibar() {
                                     <StyledLink to="/" onClick={toggleCloseCanvas}>Home</StyledLink>
                                     <StyledLink to="/about" onClick={toggleCloseCanvas}>About</StyledLink>
                                     <StyledLink to="/details" onClick={toggleCloseCanvas}>Details</StyledLink>
+                                    <StyledLink to="/calendar" onClick={toggleCloseCanvas}>Calendar</StyledLink>
                                     <StyledLink to="/contact" onClick={toggleCloseCanvas}>Contact</StyledLink>
                                 </Nav>
                             </Offcanvas.Body>

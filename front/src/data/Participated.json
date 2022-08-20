@@ -1,24 +1,22 @@
 {
     "data": [
         {
-            "name": "Polkadot Hackathon: North America Edition",
-            "date": "May 30 ~ Jul 13, 2022",
-            "script": "script1",
-            "result": "src",
-            "image": "src",
-            "link": "src",
-            "githuburl": "src",
-            "resulturl": "src"
-        },
-        {
-            "name": "ETHSeoul",
+            "event": "ETHSeoul",
             "date": "Aug 5 ~ Aug 13, 2022",
-            "script": "script2",
-            "result": "src",
+            "script": "ETHSeoul-SoulTag",
+            "result": "Filecoin: Pool prize $500",
             "image": "src",
             "link": "https://2022.ethseoul.org/",
-            "githuburl": "src",
-            "resulturl": "src"
+            "githuburl": ""
+        },
+        {
+            "event": "Polkadot Hackathon: North America Edition",
+            "date": "May 30 ~ Jul 13, 2022",
+            "script": "PSP34 NFT minting site",
+            "result": "src",
+            "image": "src",
+            "link": "https://polkadot-na.devpost.com/",
+            "githuburl": "https://github.com/k-c-h-a-n/psp34_contract"
         },
         {
             "name": "test3",
