@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavInit, Navi, LogoTitle, NavContainer, NavContainerText } from "./style";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,9 +8,20 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaDiscord, FaTelegram, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export default function Navibar() {
+    const [show, setShow] = useState(false);
+
+    const toggleOffCanvas = () => {
+        // if (show == true) {
+            setShow((show) => !show);
+        // }
+    };
+    const toggleCloseCanvas = () => {
+        setShow(false);
+    }
+
     return (
         <NavInit>
-            <Navbar key="md" expand="md" bg="dark" variant="dark">
+            <Navbar key="sm" expand="sm" bg="dark" variant="dark">
                 <Navi>
                     <StyledLink to="/" >
                         <LogoTitle>
@@ -18,31 +29,37 @@ export default function Navibar() {
                         </LogoTitle>
                     </StyledLink>
                     <NavContainer>
-                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
+                        <Navbar.Toggle
+                            aria-controls={`offcanvasNavbar-expand-md`}
+                            onClick={toggleOffCanvas}
+                        />
                     </NavContainer>
                     <NavContainerText>
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-md`}
                             aria-labelledby={`offcanvasNavbarLabel-expand-md`}
                             placement="end"
+                            show={show}
+                            onHide={toggleOffCanvas}
                         >
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-sm`}>
+                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
                                     UNCHAIN
                                 </Offcanvas.Title>
                                 <OffcanvasSNS>
-                                    <FaDiscord size="24" style={{marginRight: '10px'}}/>
-                                    <FaTelegram size="24" style={{marginRight: '10px'}}/>
-                                    <FaTwitter size="24" style={{marginRight: '10px'}}/>
+                                    <FaDiscord size="24" style={{ marginRight: '10px' }} />
+                                    <FaTelegram size="24" style={{ marginRight: '10px' }} />
+                                    <FaTwitter size="24" style={{ marginRight: '10px' }} />
                                     <FaGithub size="24" />
                                 </OffcanvasSNS>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <Nav className="justify-content-center flex-grow-1">
-                                    <StyledLink to="/" >Home</StyledLink>
-                                    <StyledLink to="/about" >About</StyledLink>
-                                    <StyledLink to="/details" >Details</StyledLink>
-                                    <StyledLink to="/contact" >Contact</StyledLink>
+                                <Nav className="justify-content-center flex-grow-1" collapseOnSelect={true}>
+                                    <StyledLink to="/" onClick={toggleCloseCanvas}>Home</StyledLink>
+                                    <StyledLink to="/about" onClick={toggleCloseCanvas}>About</StyledLink>
+                                    <StyledLink to="/details" onClick={toggleCloseCanvas}>Details</StyledLink>
+                                    <StyledLink to="/calendar" onClick={toggleCloseCanvas}>Calendar</StyledLink>
+                                    <StyledLink to="/contact" onClick={toggleCloseCanvas}>Contact</StyledLink>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
