@@ -13,8 +13,9 @@ export const Navi = styled.div`
     left:0px;
     height: 64px;
     width: 100%;
-    background: rgb(20,20,20,0.5);
-    backdrop-filter: blur(10px);
+    /* background: rgb(20,20,20,0.5); */
+    background: transparent;
+    backdrop-filter: blur(5px);
     display: inline-block;
     line-height: 64px;
     color: whitesmoke;
