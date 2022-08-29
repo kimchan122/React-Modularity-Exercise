@@ -20,29 +20,29 @@ export default function Navibar() {
     }
 
     return (
-        <NavInit>
-            <Navbar key="sm" expand="sm" bg="dark" variant="dark">
+        <NavInit >
+            <Navbar key="sm" expand="sm" bg="dark" variant="dark" >
                 <Navi>
                     <StyledLink to="/" >
-                        <LogoTitle>
-                            UNCHAIN
+                        <LogoTitle >
+                            D-Ad
                         </LogoTitle>
                     </StyledLink>
-                    <NavContainer>
+                    <NavContainerText>
                         <Navbar.Toggle
+                            style={{backgroundColor: "black"}}
                             aria-controls={`offcanvasNavbar-expand-md`}
                             onClick={toggleOffCanvas}
                         />
-                    </NavContainer>
-                    <NavContainerText>
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-md`}
                             aria-labelledby={`offcanvasNavbarLabel-expand-md`}
                             placement="end"
                             show={show}
                             onHide={toggleOffCanvas}
+                            
                         >
-                            <Offcanvas.Header closeButton>
+                            <Offcanvas.Header closeButton >
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
                                     UNCHAIN
                                 </Offcanvas.Title>
@@ -53,13 +53,13 @@ export default function Navibar() {
                                     <FaGithub size="24" />
                                 </OffcanvasSNS>
                             </Offcanvas.Header>
-                            <Offcanvas.Body>
-                                <Nav className="justify-content-center flex-grow-1" collapseOnSelect={true}>
-                                    <StyledLink to="/" onClick={toggleCloseCanvas}>Home</StyledLink>
+                            <Offcanvas.Body >
+                                <Nav collapseOnSelect={true}>
+                                    <StyledLink to="/" onClick={toggleCloseCanvas} >Home</StyledLink>
                                     <StyledLink to="/about" onClick={toggleCloseCanvas}>About</StyledLink>
                                     <StyledLink to="/details" onClick={toggleCloseCanvas}>Details</StyledLink>
-                                    <StyledLink to="/calendar" onClick={toggleCloseCanvas}>Calendar</StyledLink>
-                                    <StyledLink to="/contact" onClick={toggleCloseCanvas}>Contact</StyledLink>
+                                    {/* <StyledLink to="/calendar" onClick={toggleCloseCanvas}>Calendar</StyledLink> */}
+                                    <StyledLink to="/contact" onClick={toggleCloseCanvas} >Contact</StyledLink>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
