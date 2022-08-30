@@ -6,24 +6,25 @@ import { BGText, BGText2, BGTextContainer, Businesstext, Ourexplain, Explaintext
 import { Fade } from 'react-awesome-reveal';
 import '../App.css';
 import { FaGithub } from 'react-icons/fa';
+
 const MainPage = () => {
     return (
         <div className="App">
             <BGContainer>
-                <BGTextContainer >
                     <Rectangle1 style={{ background: '#efefef' }} />
-                    <Rectangle2 style={{ background: '#bdbdbd' }} />
-                    <Rectangle3 style={{ background: '#90a4ae' }} />
+                    <Rectangle2 style={{ background: '#c1c1c1' }} />
+                    <Rectangle3 style={{ background: '#afafaf' }} />
+                    <BGText>
                     <Fade duration="3000" triggerOnce={true}>
-                        <BGText>Privacy is the power </BGText>
+                        Privacy is the power
                     </Fade >
                     <Fade duration="4000" triggerOnce={true}>
-                        <BGText>to selectively reveal oneself </BGText>
+                        to selectively reveal oneself
                     </Fade>
                     <Fade duration="5000" triggerOnce={true}>
-                        <BGText>to the world.</BGText>
+                        to the world.
                     </Fade>
-                </BGTextContainer>
+                    </BGText>
             </BGContainer>
             <BGContainer_2>
                 <Ourexplain style={{ fontWeight: "800" }}>
@@ -65,24 +66,13 @@ const MainPage = () => {
                         Ticket to ensure anonymity and authenticate yourself using sbt.
                     </Businesstext>
                 </Businessicon>
-
             </BGContainer_3>
             <BGContainer_4>
-                <Contacttext style={{alignContent: "center"}}>
-                    Contact 
-                    <FaGithub size="50" style={{lineHeight: "10vh", marginLeft: "50px", alignItems: "center"}}/>
+                <Contacttext>
+                    <FaGithub onClick={e=>window.open('https://github.com/kimchan122/D-Ad-MVP', '_black')} size="50" style={{lineHeight: "10vh",height:"10vh", alignItems: "center"}}/>
                 </Contacttext>
-                    
             </BGContainer_4>
         </div>
     )
 }
 export default MainPage;
-{/* <Fade duration="2000" triggerOnce={true}>
-    <BGText2>
-        <LogoTitle
-            style={{ display: "inline", marginLeft: "0", marginRight: "15px" }}>D-Ad
-        </LogoTitle>
-        uses blockchain to write a new history of advertising.
-    </BGText2>
-</Fade> */}

@@ -7,13 +7,13 @@ export function Rectangle1(props) {
 		<Reactangle aspectRatio={[10, 0]}>
 			<div
 				style={{
-                    position:'relative',
-                    display: 'flex',
+                    position:'absolute',
+                    display: 'inlin-block',
 					width: '400px',
 					height: '400px',
-                    marginLeft: '400px',
+                    marginLeft: '30%',
+                    marginTop: '30vh',
 					...props.style,
-
 				}}
 			/>
 		</Reactangle>
@@ -28,10 +28,9 @@ export function Rectangle2(props) {
 				style={{
                     position:'absolute',
                     display: 'inline-block',
-                    bottom: '-150px',
 					width: '300px',
 					height: '300px',
-                    marginLeft: '44px',
+                    marginTop: '21vh',
 					...props.style,
 				}}/>
 		</Reactangle>
@@ -49,7 +48,7 @@ export function Rectangle3(props) {
                     top: '150px',
 					width: '300px',
 					height: '300px',
-                    marginLeft: '44px',
+                    marginTop: '30vh',
 					...props.style,
 				}}
 			/>
@@ -59,12 +58,11 @@ export function Rectangle3(props) {
 
 
 export const BGContainer = styled.div`
-    min-height: 500px;
+    min-height: 600px;
     height: 100vh;
-    
 `
 export const BGContainer_2 = styled.div`
-    min-height: 500px;
+    min-height: 600px;
     height: 100vh;
     //display: flex;
     justify-content: center;
@@ -72,7 +70,7 @@ export const BGContainer_2 = styled.div`
     background-color: #f8f8f8;
 `
 export const BGContainer_3 = styled.div`
-    min-height: 200px;
+    min-height: 400px;
     height: 90vh;
     //display: flex;
     justify-content: center;
@@ -83,11 +81,8 @@ export const BGContainer_3 = styled.div`
 export const BGContainer_4 = styled.div`
     min-height: 50px;
     height: 10vh;
-    line-height: 10vh;
-    //display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #d0d0d0;
+
 `
 
 export const BGWhiteContainer = styled.div`
@@ -124,5 +119,18 @@ export const BGContainerText = styled.div`
     display: inline;
     height: 100vw;
     color: 000000;
+`
+
+export const Gotop = styled.img`
+    ${(props) => props.src};
+    position: fixed;
+    //justify-content: center;
+    //float: right;
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 50px;
+    z-index: 5;
+    object-fit: cover;
 `
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavInit, Navi, LogoTitle, NavContainer, NavContainerText } from "./style";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,27 +10,31 @@ import { FaDiscord, FaTelegram, FaTwitter, FaGithub } from 'react-icons/fa';
 export default function Navibar() {
     const [show, setShow] = useState(false);
 
+    const [location, setLocation] = useState(0);
+
     const toggleOffCanvas = () => {
         // if (show == true) {
-            setShow((show) => !show);
+        setShow((show) => !show);
         // }
     };
-    const toggleCloseCanvas = () => {
+    const toggleCloseCanvas = (to) => {
         setShow(false);
+        window.scrollTo(0, to * window.innerHeight);
+        // set
     }
 
     return (
         <NavInit >
             <Navbar key="sm" expand="sm" bg="dark" variant="dark" >
                 <Navi>
-                    <StyledLink to="/" >
-                        <LogoTitle >
+                    <StyledLink to="/" style={{marginLeft: "9.5vw"}}>
+                        <LogoTitle>
                             D-Ad
                         </LogoTitle>
                     </StyledLink>
                     <NavContainerText>
                         <Navbar.Toggle
-                            style={{backgroundColor: "black"}}
+                            style={{ backgroundColor: "black" }}
                             aria-controls={`offcanvasNavbar-expand-md`}
                             onClick={toggleOffCanvas}
                         />
@@ -40,7 +44,7 @@ export default function Navibar() {
                             placement="end"
                             show={show}
                             onHide={toggleOffCanvas}
-                            
+
                         >
                             <Offcanvas.Header closeButton >
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
@@ -55,11 +59,11 @@ export default function Navibar() {
                             </Offcanvas.Header>
                             <Offcanvas.Body >
                                 <Nav collapseOnSelect={true}>
-                                    <StyledLink to="/" onClick={toggleCloseCanvas} >Home</StyledLink>
-                                    <StyledLink to="/about" onClick={toggleCloseCanvas}>About</StyledLink>
-                                    <StyledLink to="/details" onClick={toggleCloseCanvas}>Details</StyledLink>
+                                    <StyledLink onClick={e => toggleCloseCanvas(0)} >Home</StyledLink>
+                                    <StyledLink onClick={e => toggleCloseCanvas(1)}>About</StyledLink>
+                                    <StyledLink onClick={e => toggleCloseCanvas(2)}>Details</StyledLink>
                                     {/* <StyledLink to="/calendar" onClick={toggleCloseCanvas}>Calendar</StyledLink> */}
-                                    <StyledLink to="/contact" onClick={toggleCloseCanvas} >Contact</StyledLink>
+                                    {/* <StyledLink to="/contact" onClick={toggleCloseCanvas} >Contact</StyledLink> */}
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>

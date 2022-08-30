@@ -19,13 +19,14 @@ export const Navi = styled.div`
 `
 
 export const LogoTitle = styled.div`
-    margin-left: 120px;
-    padding-left: 10%;
+    //margin-left: 120px;
+    //padding-left: 10%;
     font-size: 3rem;
     font-weight: 900;
     color: black;
     width: 100%;
     display: block;
+    white-space: nowrap;
 `
 
 export const NavContainerText = styled.nav`
@@ -37,9 +38,12 @@ export const NavContainerText = styled.nav`
 `
 
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled.button`
     margin-top: 5px;
     margin-right: 20px;
+    border: none;
+    background-color: white;
+    
     color: #000000;
     &:focus, &:visited, &:link, &:active {
         text-decoration: none;
