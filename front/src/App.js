@@ -18,10 +18,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<MainPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          {/* <Route path="/about" element={<AboutPage />} />
           <Route path="/details" element={<DetailsPage />} />
           <Route path="/calendar" element={<CalendarPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/contact" element={<ContactPage />} /> */}
         </Routes>
       </div>
     </HashRouter>

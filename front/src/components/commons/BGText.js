@@ -12,27 +12,17 @@ export const BGTextContainer = styled.div`
     top: 50%;
     transform: translateY(-50%);
 `
-
-export const BGTextContainer2 = styled.div`
-    //display: block;
+export const BGText = styled.div`
     position: relative;
-    font-size: 3rem;
+    width: 100%;
+    padding-left : 10%;
+    font-size: 3em;
     font-weight: 700;
+    margin-top: 30vh;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    top: 5%;
-    
-`
-
-
-
-export const BGText = styled.div`
-    width: 100%;
-    //margin-left: 100px;
-    padding-left : 10%;
     display: block;
-    word-break:break-all;
+    object-fit: cover;
     text-align: left;
 `
 
@@ -79,7 +69,7 @@ export const Businessicon = styled.div`
 export const Businesstext = styled.div`
     padding-top: 1%;
     max-width: 400px;
-    word-break:break-word;
+    word-break:keep-all;
     text-align: left;
     font-size: 1.5rem;
     font-weight: 700;
@@ -90,10 +80,7 @@ export const Businesstext = styled.div`
 export const Contacttext = styled.div`
     position: relative;
     display: flex;
-    word-break: break-word;
-    text-align: left;
-    align-items: center;
-    padding-left: 10%;
+    justify-content: center;
     font-size: 2rem;
     font-weight: 800;
 `
