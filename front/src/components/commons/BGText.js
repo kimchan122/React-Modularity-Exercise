@@ -57,7 +57,7 @@ export const Explaintext = styled.div`
 `
 
 export const Businessicon = styled.div`
-    width: 80%;
+    width: 100%;
     padding-top: 5%;
     display: block;
     word-break: break-word;
@@ -68,7 +68,8 @@ export const Businessicon = styled.div`
 
 export const Businesstext = styled.div`
     padding-top: 1%;
-    max-width: 400px;
+    max-width: 450px;
+    min-width: 300px;
     word-break:keep-all;
     text-align: left;
     font-size: 1.5rem;

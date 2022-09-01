@@ -55,7 +55,7 @@ const MainPage = () => {
                     OUR BUSINESS
                 </Businessicon>
                 <Businessicon style={{ paddingLeft: "0", justifyContent: "start", display: "inline-flex" }}>
-                    <BGContainer_Icon src={Adsicon} />
+                    <BGContainer_Icon src={Adsicon} style={{marginLeft: "10%"}} />
                     <Businesstext >
                         <Businesstext style={{marginLeft: "0", fontSize: "2rem"}}>D-Ad</Businesstext>
                         Using ZKP, users are shown targeted advertisements their interests while minimizing data leakage, and rewarded accordingly.
