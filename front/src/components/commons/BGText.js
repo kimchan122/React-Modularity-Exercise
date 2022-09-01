@@ -18,9 +18,7 @@ export const BGText = styled.div`
     padding-left : 10%;
     font-size: 3em;
     font-weight: 700;
-    margin-top: 30vh;
-    justify-content: center;
-    align-items: center;
+    margin-top: 35vh;
     display: block;
     object-fit: cover;
     text-align: left;
@@ -84,4 +82,35 @@ export const Contacttext = styled.div`
     justify-content: center;
     font-size: 2rem;
     font-weight: 800;
+`
+
+export const SSItext1 = styled.div`
+    position: absolute;
+    word-break: break-word;
+    width: 100%;
+    margin-top: 150px;
+    font-size: 3em;
+    font-weight: 700;
+    
+`
+
+export const SSItext2 = styled.div`
+    position: relative;
+    text-align: left;
+    word-break: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-weight: 500;
+    
+`
+
+export const SSItext3 = styled.div`
+    position: relative;
+    text-align: left;
+    word-break: break-word;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 400;
 `

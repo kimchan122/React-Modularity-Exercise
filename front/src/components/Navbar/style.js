@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export const NavInit = styled.div`
     position: absolute;
     z-index: 100;
+    margin-top: 3%;
 `
 
 export const Navi = styled.div`
@@ -12,7 +13,7 @@ export const Navi = styled.div`
     top:0px;
     background: transparent;
     display: inline-flex;
-    line-height: 120px;
+    line-height: 60px;
     color: whitesmoke;
     justify-content: space-between;
     
@@ -38,13 +39,28 @@ export const NavContainerText = styled.nav`
 `
 
 
-export const StyledLink = styled.button`
-    margin-top: 5px;
+export const Styledbutton = styled.button`
+    display: flex;
+    align-items: center;
     margin-right: 20px;
+    background-color: transparent;
     border: none;
-    background-color: white;
-    
+    font-weight:600;
     color: #000000;
+    &:focus, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+    &:hover{
+        color: #000000;
+    }
+`
+
+export const StyledLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #000000;
+    font-weight:600;
     &:focus, &:visited, &:link, &:active {
         text-decoration: none;
     }

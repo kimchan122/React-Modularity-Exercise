@@ -1,16 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { NavInit, Navi, LogoTitle, NavContainer, NavContainerText } from "./style";
+import React, { useState } from "react";
+import { NavInit, Navi, LogoTitle, NavContainerText, Styledbutton, StyledLink } from "./style";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { StyledLink } from "./style";
 import { OffcanvasSNS } from "./style";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaDiscord, FaTelegram, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export default function Navibar() {
     const [show, setShow] = useState(false);
-
-    const [location, setLocation] = useState(0);
 
     const toggleOffCanvas = () => {
         // if (show == true) {
@@ -27,11 +24,11 @@ export default function Navibar() {
         <NavInit >
             <Navbar key="sm" expand="sm" bg="dark" variant="dark" >
                 <Navi>
-                    <StyledLink to="/" style={{marginLeft: "9.5vw"}}>
+                    <Styledbutton to="/" style={{marginLeft: "9.5vw"}}>
                         <LogoTitle>
                             D-Ad
                         </LogoTitle>
-                    </StyledLink>
+                    </Styledbutton>
                     <NavContainerText>
                         <Navbar.Toggle
                             style={{ backgroundColor: "black" }}
@@ -58,11 +55,11 @@ export default function Navibar() {
                                 </OffcanvasSNS>
                             </Offcanvas.Header>
                             <Offcanvas.Body >
-                                <Nav collapseOnSelect={true}>
-                                    <StyledLink onClick={e => toggleCloseCanvas(0)} >Home</StyledLink>
-                                    <StyledLink onClick={e => toggleCloseCanvas(1)}>About</StyledLink>
-                                    <StyledLink onClick={e => toggleCloseCanvas(2)}>Details</StyledLink>
-                                    {/* <StyledLink to="/calendar" onClick={toggleCloseCanvas}>Calendar</StyledLink> */}
+                                <Nav >
+                                    <StyledLink to="/" >Home</StyledLink>
+                                    <Styledbutton onClick={e => toggleCloseCanvas(1)}>About</Styledbutton>
+                                    <Styledbutton onClick={e => toggleCloseCanvas(2)}>Details</Styledbutton>
+                                    <StyledLink to="/SSI"> Self Sovereign Identity</StyledLink>
                                     {/* <StyledLink to="/contact" onClick={toggleCloseCanvas} >Contact</StyledLink> */}
                                 </Nav>
                             </Offcanvas.Body>
