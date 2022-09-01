@@ -11,10 +11,11 @@ const MainPage = () => {
     return (
         <div className="App">
             <BGContainer>
-                    <Rectangle1 style={{ background: '#efefef' }} />
-                    <Rectangle2 style={{ background: '#c1c1c1' }} />
-                    <Rectangle3 style={{ background: '#afafaf' }} />
-                    <BGText>
+                <Rectangle1 style={{ background: '#efefef' }} />
+                <Rectangle2 style={{ background: '#c1c1c1' }} />
+                <Rectangle3 style={{ background: '#afafaf' }} />
+
+                <BGText>
                     <Fade duration="3000" triggerOnce={true}>
                         Privacy is the power
                     </Fade >
@@ -24,7 +25,7 @@ const MainPage = () => {
                     <Fade duration="5000" triggerOnce={true}>
                         to the world.
                     </Fade>
-                    </BGText>
+                </BGText>
             </BGContainer>
             <BGContainer_2>
                 <Ourexplain style={{ fontWeight: "800" }}>
@@ -55,21 +56,21 @@ const MainPage = () => {
                     OUR BUSINESS
                 </Businessicon>
                 <Businessicon style={{ paddingLeft: "0", justifyContent: "start", display: "inline-flex" }}>
-                    <BGContainer_Icon src={Adsicon} style={{marginLeft: "10%"}} />
+                    <BGContainer_Icon src={Adsicon} style={{ marginLeft: "10%" }} />
                     <Businesstext >
-                        <Businesstext style={{marginLeft: "0", fontSize: "2rem"}}>D-Ad</Businesstext>
+                        <Businesstext style={{ marginLeft: "0", fontSize: "2rem" }}>D-Ad</Businesstext>
                         Using ZKP, users are shown targeted advertisements their interests while minimizing data leakage, and rewarded accordingly.
                     </Businesstext>
                     <BGContainer_Icon src={tagicon} />
                     <Businesstext>
-                    <Businesstext style={{marginLeft: "0", fontSize: "2rem"}}>Soul Tag</Businesstext>
+                        <Businesstext style={{ marginLeft: "0", fontSize: "2rem" }}>Soul Tag</Businesstext>
                         Ticket to ensure anonymity and authenticate yourself using sbt.
                     </Businesstext>
                 </Businessicon>
             </BGContainer_3>
             <BGContainer_4>
                 <Contacttext>
-                    <FaGithub onClick={e=>window.open('https://github.com/kimchan122/D-Ad-MVP', '_black')} size="50" style={{lineHeight: "10vh",height:"10vh", alignItems: "center"}}/>
+                    <FaGithub onClick={e => window.open('https://github.com/kimchan122/D-Ad-MVP', '_black')} size="50" style={{ lineHeight: "10vh", height: "10vh", alignItems: "center" }} />
                 </Contacttext>
             </BGContainer_4>
         </div>

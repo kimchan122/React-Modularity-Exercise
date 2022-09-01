@@ -3,16 +3,15 @@ import Reactangle from 'react-rectangle'
 
 export function Rectangle1(props) {
 	return (
-        //yellow
-		<Reactangle aspectRatio={[10, 0]}>
+		<Reactangle>
 			<div
 				style={{
                     position:'absolute',
-                    display: 'inlin-block',
+                    display: 'inline-block',
 					width: '400px',
 					height: '400px',
-                    marginLeft: '30%',
-                    marginTop: '30vh',
+                    marginLeft: '30vw',
+                    marginTop: '250px',
 					...props.style,
 				}}
 			/>
@@ -23,14 +22,15 @@ export function Rectangle1(props) {
 export function Rectangle2(props) {
 	return (
         //sky
-        <Reactangle aspectRatio={[70, 2]}>
+        <Reactangle>
 			<div
 				style={{
-                    position:'absolute',
+                    position:'relative',
                     display: 'inline-block',
 					width: '300px',
 					height: '300px',
-                    marginTop: '21vh',
+                    marginTop: '150px',
+                    marginLeft: '54.4vw',
 					...props.style,
 				}}/>
 		</Reactangle>
@@ -40,15 +40,16 @@ export function Rectangle2(props) {
 export function Rectangle3(props) {
 	return (
         //green
-		<Reactangle aspectRatio={[70,2]}>
+		<Reactangle>
 			<div
 				style={{
-                    position:'absolute',
+                    position:'relative',
                     display: 'inline-block',
                     top: '150px',
 					width: '300px',
 					height: '300px',
-                    marginTop: '30vh',
+                    marginTop: '300px',
+                    marginLeft: '54.4vw',
 					...props.style,
 				}}
 			/>
@@ -58,17 +59,19 @@ export function Rectangle3(props) {
 
 
 export const BGContainer = styled.div`
-    min-height: 600px;
+    display: flex;
+    //min-height: 600px;
     height: 100vh;
     min-width: 1000px;
 `
 export const BGContainer_2 = styled.div`
-    min-height: 600px;
+    //min-height: 600px;
     height: 100vh;
     min-width: 1000px;
+    position: relative;
     //display: flex;
     justify-content: center;
-    flex-direction: column;
+    //flex-direction: column;
     background-color: #f8f8f8;
 `
 export const BGContainer_3 = styled.div`
@@ -138,3 +141,11 @@ export const Gotop = styled.img`
     object-fit: cover;
 `
 
+export const Web3text = styled.div`
+    position: absolute;
+    width: 100%;
+    margin-top: 300px;
+    padding-left:15%;
+    padding-right: 15%;
+
+`
