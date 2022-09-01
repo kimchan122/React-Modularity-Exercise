@@ -60,10 +60,12 @@ export function Rectangle3(props) {
 export const BGContainer = styled.div`
     min-height: 600px;
     height: 100vh;
+    min-width: 1000px;
 `
 export const BGContainer_2 = styled.div`
     min-height: 600px;
     height: 100vh;
+    min-width: 1000px;
     //display: flex;
     justify-content: center;
     flex-direction: column;
@@ -72,6 +74,7 @@ export const BGContainer_2 = styled.div`
 export const BGContainer_3 = styled.div`
     min-height: 400px;
     height: 90vh;
+    min-width: 1000px;
     //display: flex;
     justify-content: center;
     flex-direction: column;
@@ -81,6 +84,7 @@ export const BGContainer_3 = styled.div`
 export const BGContainer_4 = styled.div`
     min-height: 50px;
     height: 10vh;
+    min-width: 1000px;
     background-color: #d0d0d0;
 
 `
