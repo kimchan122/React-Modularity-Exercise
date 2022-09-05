@@ -15,7 +15,6 @@ export const BGTextContainer = styled.div`
 export const BGText = styled.div`
     position: relative;
     width: 100%;
-    padding-left : 10%;
     font-size: 3em;
     font-weight: 700;
     margin-top: 35vh;
@@ -40,39 +39,47 @@ export const Ourexplain = styled.div`
     word-break:break-word;
     text-align: left;
     font-size: 2rem;
-    padding-left: 10%;
     color: #00a4ae;
 `
 
 export const Explaintext = styled.div`
-    width: 85%;
+    width: 100%;
     padding-top: 1%;
     display: block;
     word-break:break-word;
     text-align: left;
     font-size: 1.5rem;
-    padding-left: 10%;
 `
 
 export const Businessicon = styled.div`
     width: 100%;
     padding-top: 5%;
-    display: block;
+    display: inline-block;
     word-break: break-word;
     text-align: left;
-    padding-left: 10%;
     font-size: 2rem;
 `
 
-export const Businesstext = styled.div`
-    padding-top: 1%;
-    max-width: 450px;
-    min-width: 300px;
+export const Business = styled.div`
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr;
+    display: inline-grid;
     word-break:keep-all;
     text-align: left;
+    margin-top: 30px;
     font-size: 1.5rem;
     font-weight: 700;
-    margin-left: 20px;
+    
+`
+
+export const Businesstext = styled.div`
+    word-break:keep-all;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    font-size: 2rem;
+    font-weight: 700;
     
 `
 
@@ -91,6 +98,8 @@ export const SSItext1 = styled.div`
     margin-top: 150px;
     font-size: 3em;
     font-weight: 700;
+    padding-left : 20%;
+    padding-right: 20%;
     
 `
 
@@ -109,8 +118,9 @@ export const SSItext3 = styled.div`
     position: relative;
     text-align: left;
     word-break: break-word;
+
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     font-size: 1.5em;
     font-weight: 400;
 `

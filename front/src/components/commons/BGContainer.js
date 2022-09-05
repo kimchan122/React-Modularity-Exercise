@@ -6,11 +6,11 @@ export function Rectangle1(props) {
 		<Reactangle>
 			<div
 				style={{
-                    position:'absolute',
-                    display: 'inline-block',
+                    //display: 'inline-block',
+                    Position: 'absolute',
 					width: '400px',
 					height: '400px',
-                    marginLeft: '30vw',
+                    marginLeft: '10vw',
                     marginTop: '250px',
 					...props.style,
 				}}
@@ -21,16 +21,15 @@ export function Rectangle1(props) {
 
 export function Rectangle2(props) {
 	return (
-        //sky
         <Reactangle>
 			<div
 				style={{
-                    position:'relative',
+                    position:'absolute',
                     display: 'inline-block',
 					width: '300px',
 					height: '300px',
                     marginTop: '150px',
-                    marginLeft: '54.4vw',
+                    marginLeft: '30.8vw',
 					...props.style,
 				}}/>
 		</Reactangle>
@@ -39,17 +38,16 @@ export function Rectangle2(props) {
 
 export function Rectangle3(props) {
 	return (
-        //green
 		<Reactangle>
 			<div
 				style={{
-                    position:'relative',
+                    position:'absolute',
                     display: 'inline-block',
                     top: '150px',
 					width: '300px',
 					height: '300px',
                     marginTop: '300px',
-                    marginLeft: '54.4vw',
+                    marginLeft: '30.8vw',
 					...props.style,
 				}}
 			/>
@@ -60,25 +58,23 @@ export function Rectangle3(props) {
 
 export const BGContainer = styled.div`
     display: flex;
-    //min-height: 600px;
     height: 100vh;
-    min-width: 1000px;
 `
 export const BGContainer_2 = styled.div`
-    //min-height: 600px;
     height: 100vh;
     min-width: 1000px;
     position: relative;
-    //display: flex;
+    padding-left : 20%;
+    padding-right: 20%;
     justify-content: center;
-    //flex-direction: column;
     background-color: #f8f8f8;
 `
 export const BGContainer_3 = styled.div`
     min-height: 400px;
     height: 90vh;
     min-width: 1000px;
-    //display: flex;
+    padding-left : 20%;
+    padding-right: 20%;
     justify-content: center;
     flex-direction: column;
     background-color: #dfdfdf;
@@ -89,7 +85,6 @@ export const BGContainer_4 = styled.div`
     height: 10vh;
     min-width: 1000px;
     background-color: #d0d0d0;
-
 `
 
 export const BGWhiteContainer = styled.div`
@@ -116,10 +111,11 @@ export const BGContainer_Img_Ca = styled.img`
 `
 
 export const BGContainer_Icon = styled.img`
-    display: inline-flex;
     ${(props) => props.src};
+    grid-row: 1/ span 3;
     max-width: 210px;
     max-height: 210px;
+    margin-top: 20px;
 `
 
 export const BGContainerText = styled.div`
@@ -145,7 +141,7 @@ export const Web3text = styled.div`
     position: absolute;
     width: 100%;
     margin-top: 300px;
-    padding-left:15%;
-    padding-right: 15%;
+    padding-left : 20%;
+    padding-right: 20%;
 
 `

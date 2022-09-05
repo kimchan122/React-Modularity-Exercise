@@ -10,14 +10,11 @@ export default function Navibar() {
     const [show, setShow] = useState(false);
 
     const toggleOffCanvas = () => {
-        // if (show == true) {
         setShow((show) => !show);
-        // }
     };
     const toggleCloseCanvas = (to) => {
         setShow(false);
         window.scrollTo(0, to * window.innerHeight);
-        // set
     }
 
     return (
@@ -41,7 +38,6 @@ export default function Navibar() {
                             placement="end"
                             show={show}
                             onHide={toggleOffCanvas}
-
                         >
                             <Offcanvas.Header closeButton >
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
@@ -57,8 +53,8 @@ export default function Navibar() {
                             <Offcanvas.Body >
                                 <Nav >
                                     <StyledLink to="/" >Home</StyledLink>
-                                    <Styledbutton onClick={e => toggleCloseCanvas(1)}>About</Styledbutton>
-                                    <Styledbutton onClick={e => toggleCloseCanvas(2)}>Details</Styledbutton>
+                                    <Styledbutton onClick={e => toggleCloseCanvas(1)} style={{padding:"0"}}>About</Styledbutton>
+                                    <Styledbutton onClick={e => toggleCloseCanvas(2)} style={{padding:"0"}}>Details</Styledbutton>
                                     <StyledLink to="/SSI"> Self Sovereign Identity</StyledLink>
                                     {/* <StyledLink to="/contact" onClick={toggleCloseCanvas} >Contact</StyledLink> */}
                                 </Nav>
