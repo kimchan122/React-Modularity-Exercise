@@ -2,7 +2,7 @@ import React from "react";
 import Adsicon from "../assets/ads.png";
 import tagicon from "../assets/tag.png";
 import { Rectangle1, Rectangle2, Rectangle3, BGContainer, BGContainer_2, BGContainer_3, BGContainer_4, BGContainer_Icon } from '../components/commons/BGContainer';
-import { BGText, BGText2, BGTextContainer, Businesstext, Ourexplain, Explaintext, Businessicon, Contacttext } from '../components/commons/BGText';
+import { BGText, Business, BGTextContainer, Businesstext, Ourexplain, Explaintext, Businessicon, Contacttext } from '../components/commons/BGText';
 import { Fade } from 'react-awesome-reveal';
 import '../App.css';
 import { FaGithub } from 'react-icons/fa';
@@ -10,7 +10,7 @@ import { FaGithub } from 'react-icons/fa';
 const MainPage = () => {
     return (
         <div className="App">
-            <BGContainer>
+            <BGContainer style={{ paddingLeft : "20%", paddingRight: "20%"}}>
                 <Rectangle1 style={{ background: '#efefef' }} />
                 <Rectangle2 style={{ background: '#c1c1c1' }} />
                 <Rectangle3 style={{ background: '#afafaf' }} />
@@ -55,18 +55,20 @@ const MainPage = () => {
                 <Businessicon style={{ fontWeight: "800" }}>
                     OUR BUSINESS
                 </Businessicon>
-                <Businessicon style={{ paddingLeft: "0", justifyContent: "start", display: "inline-flex" }}>
-                    <BGContainer_Icon src={Adsicon} style={{ marginLeft: "10%" }} />
-                    <Businesstext >
-                        <Businesstext style={{ marginLeft: "0", fontSize: "2rem" }}>D-Ad</Businesstext>
+                <Business >
+                    <BGContainer_Icon src={Adsicon} style={{ justifyContent: "left" }} />
+                    <Businesstext style={{ gridColumn: "2/3" }}>D-Ad</Businesstext>
+                    <Businesstext style={{ gridColumn: "2/3" }}>
                         Using ZKP, users are shown targeted advertisements their interests while minimizing data leakage, and rewarded accordingly.
                     </Businesstext>
-                    <BGContainer_Icon src={tagicon} />
-                    <Businesstext>
-                        <Businesstext style={{ marginLeft: "0", fontSize: "2rem" }}>Soul Tag</Businesstext>
+                </Business>
+                <Business>
+                    <BGContainer_Icon src={tagicon} style={{ justifyContent: "left" }} />
+                    <Businesstext style={{gridColumn: "2/3" }}>Soul Tag</Businesstext>
+                    <Businesstext style={{ gridColumn: "2/3" }}>
                         Ticket to ensure anonymity and authenticate yourself using sbt.
                     </Businesstext>
-                </Businessicon>
+                </Business>
             </BGContainer_3>
             <BGContainer_4>
                 <Contacttext>

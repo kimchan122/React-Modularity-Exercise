@@ -15,8 +15,7 @@ export const Navi = styled.div`
     display: inline-flex;
     line-height: 60px;
     color: whitesmoke;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
 `
 
 export const LogoTitle = styled.div`
@@ -46,6 +45,7 @@ export const Styledbutton = styled.button`
     background-color: transparent;
     border: none;
     font-weight:600;
+    white-space: nowrap;
     color: #000000;
     &:focus, &:visited, &:link, &:active {
         text-decoration: none;
@@ -61,6 +61,7 @@ export const StyledLink = styled(Link)`
     margin-right: 20px;
     color: #000000;
     font-weight:600;
+    white-space: nowrap;
     &:focus, &:visited, &:link, &:active {
         text-decoration: none;
     }
