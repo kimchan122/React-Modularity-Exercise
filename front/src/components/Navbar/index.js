@@ -5,6 +5,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import { OffcanvasSNS } from "./style";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaDiscord, FaTelegram, FaTwitter, FaGithub } from 'react-icons/fa';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 export default function Navibar() {
     const [show, setShow] = useState(false);
@@ -19,16 +23,21 @@ export default function Navibar() {
 
     return (
         <div className="TopNavigationBar">
-            <button>
-                D-Ad
-            </button>
+            <Container>
+                <Row>
+                    <Col>
+                        <button className="LogiTitle" to="/">
+                            D-Ad
+                        </button>
+                    </Col>
+                    <Col></Col>
+                    <Col>
+
+                    </Col>
+                </Row>
+            </Container>
             <Navbar key="sm" expand="sm" bg="dark" variant="dark" >
                 <Navi>
-                    <Styledbutton to="/" style={{marginLeft: "13vw"}}>
-                        <LogoTitle>
-                            D-Ad
-                        </LogoTitle>
-                    </Styledbutton>
                     <NavContainerText>
                         <Navbar.Toggle
                             style={{ backgroundColor: "black" }}
@@ -56,8 +65,8 @@ export default function Navibar() {
                             <Offcanvas.Body >
                                 <Nav >
                                     <StyledLink to="/" >Home</StyledLink>
-                                    <Styledbutton onClick={e => toggleCloseCanvas(1)} style={{padding:"0"}}>About</Styledbutton>
-                                    <Styledbutton onClick={e => toggleCloseCanvas(2)} style={{padding:"0"}}>Details</Styledbutton>
+                                    <Styledbutton onClick={e => toggleCloseCanvas(1)} style={{ padding: "0" }}>About</Styledbutton>
+                                    <Styledbutton onClick={e => toggleCloseCanvas(2)} style={{ padding: "0" }}>Details</Styledbutton>
                                     <StyledLink to="/SSI"> Self Sovereign Identity</StyledLink>
                                     {/* <StyledLink to="/contact" onClick={toggleCloseCanvas} >Contact</StyledLink> */}
                                 </Nav>
