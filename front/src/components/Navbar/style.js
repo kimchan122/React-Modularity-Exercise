@@ -2,9 +2,10 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 
 export const NavInit = styled.div`
-    position: absolute;
+    position: fixed;
     z-index: 100;
-    margin-top: 3%;
+    padding-top: 30px;
+    top: 30px;
 `
 
 export const Navi = styled.div`

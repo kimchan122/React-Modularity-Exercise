@@ -6,17 +6,34 @@ import sbt from "../assets/sbt.png";
 import { Rectangle1, Rectangle2, Rectangle3, BGContainer, BGContainer_2, BGContainer_3, BGContainer_4, BGContainer_Icon } from '../components/commons/BGContainer';
 import { BGText, Business, BGTextContainer, Businesstext, Ourexplain, Explaintext, Businessicon, Contacttext } from '../components/commons/BGText';
 import { Fade } from 'react-awesome-reveal';
-import '../App.css';
 import { FaGithub } from 'react-icons/fa';
 
 const MainPage = () => {
     return (
         <div className="App">
-            <BGContainer style={{ paddingLeft : "20%", paddingRight: "20%"}}>
-                <Rectangle1 style={{ background: '#efefef' }} />
-                <Rectangle2 style={{ background: '#c1c1c1' }} />
-                <Rectangle3 style={{ background: '#afafaf' }} />
-
+            <div className="MainPageContainer01">
+                <Fade duration="1000" delay="30" triggerOnce={true}>
+                    <div className="Rectangle01"></div>
+                </Fade>
+                <Fade duration="1000" delay="60" triggerOnce={true}>
+                    <div className="Rectangle02"></div>
+                </Fade>
+                <Fade duration="1000" delay="90" triggerOnce={true}>
+                    <div className="Rectangle03"></div>
+                </Fade>
+                <div className="MainPageText">
+                    <Fade duration="3000" triggerOnce={true}>
+                        Privacy is the power
+                    </Fade >
+                    <Fade duration="4000" triggerOnce={true}>
+                        to selectively reveal oneself
+                    </Fade>
+                    <Fade duration="5000" triggerOnce={true}>
+                        to the world.
+                    </Fade>
+                </div>
+            </div>
+            <BGContainer style={{ paddingLeft: "20%", paddingRight: "20%" }}>
                 <BGText>
                     <Fade duration="3000" triggerOnce={true}>
                         Privacy is the power
@@ -59,42 +76,42 @@ const MainPage = () => {
                 </Businessicon>
                 <Business >
                     <BGContainer_Icon src={Adsicon} style={{ justifyContent: "left" }} />
-                    <Businesstext style={{ gridColumn: "2/3" , justifyContent:"space-between" }}>D-Ad
-                        <FaGithub onClick={e => window.open('https://github.com/kimchan122/D-Ad-MVP', '_black')} size="50" style={{ marginLeft: "30px", lineHeight: "10vh", height: "10vh"}} />
+                    <Businesstext style={{ gridColumn: "2/3", justifyContent: "space-between" }}>D-Ad
+                        <FaGithub onClick={e => window.open('https://github.com/kimchan122/D-Ad-MVP', '_black')} size="50" style={{ marginLeft: "30px", lineHeight: "10vh", height: "10vh" }} />
                     </Businesstext>
                     <Businesstext style={{ gridColumn: "2/3" }}>
-                    Use zkp to targeted advertisement the user's personal data without worrying about leakage, and reward the user.
+                        Use zkp to targeted advertisement the user's personal data without worrying about leakage, and reward the user.
                     </Businesstext>
                 </Business>
                 <Business>
                     <BGContainer_Icon src={tagicon} style={{ justifyContent: "left" }} />
-                    <Businesstext style={{gridColumn: "2/3", justifyContent:"space-between"  }}>
+                    <Businesstext style={{ gridColumn: "2/3", justifyContent: "space-between" }}>
                         Soul Tag
                         <FaGithub onClick={e => window.open('https://github.com/Unchain-ETHSeoul', '_black')} size="50" style={{ marginLeft: "30px", lineHeight: "10vh", height: "10vh", alignItems: "center" }} />
                     </Businesstext>
-                    <Businesstext style={{ gridRow: "2/3",gridColumn: "2/3" }}>
+                    <Businesstext style={{ gridRow: "2/3", gridColumn: "2/3" }}>
                         Ticket to ensure anonymity and authenticate yourself using sbt.
                     </Businesstext>
                     <BGContainer_Icon style={{ justifyContent: "left" }} />
                 </Business>
                 <Business>
-                <BGContainer_Icon src={sbt} style={{  justifyContent: "left" }} />
-                    <Businesstext style={{gridColumn: "2/3", justifyContent:"space-between"  }}>
+                    <BGContainer_Icon src={sbt} style={{ justifyContent: "left" }} />
+                    <Businesstext style={{ gridColumn: "2/3", justifyContent: "space-between" }}>
                         ZK-SBT
                         <FaGithub onClick={e => window.open('https://github.com/Unchain68/ZK-SBT', '_black')} size="50" style={{ marginLeft: "30px", lineHeight: "10vh", height: "10vh", alignItems: "center" }} />
                     </Businesstext>
-                    <Businesstext style={{ gridRow: "3/4", gridColumn: "2/3"}}>
+                    <Businesstext style={{ gridRow: "3/4", gridColumn: "2/3" }}>
                         developers are provided with the tooling to issue zero-knowledge proof soul bound tokens (ZK SBTs) and verify them on-chain.
                     </Businesstext>
                 </Business>
                 <Business>
                     <BGContainer_Icon src={nft} style={{ justifyContent: "left" }} />
-                    <Businesstext style={{gridColumn: "2/3", justifyContent:"space-between"  }}>
+                    <Businesstext style={{ gridColumn: "2/3", justifyContent: "space-between" }}>
                         PSP 34 NFT
                         <FaGithub onClick={e => window.open('https://github.com/Unchain68/psp34_contract', '_black')} size="50" style={{ marginLeft: "30px", lineHeight: "10vh", height: "10vh", alignItems: "center" }} />
                     </Businesstext>
-                    <Businesstext style={{ gridRow: "3/4", gridColumn: "2/3"}}>
-                    Enables users to create and deploy NFT in PSP34 standard.
+                    <Businesstext style={{ gridRow: "3/4", gridColumn: "2/3" }}>
+                        Enables users to create and deploy NFT in PSP34 standard.
                     </Businesstext>
                 </Business>
             </BGContainer_3>

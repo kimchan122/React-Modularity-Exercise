@@ -57,15 +57,16 @@ export function Rectangle3(props) {
 
 
 export const BGContainer = styled.div`
-    display: flex;
-    height: 100vh;
-    min-width:700px;
+    position: relative;
+    display: block;
+    height: 100%;
+    min-width:280px;
 `
 export const BGContainer_2 = styled.div`
-    height: 100vh;
-    min-width: 700px;
     position: relative;
-    display: flex;
+    display: block;
+    height: 100%;
+    min-width: 280px;
     padding-left : 20%;
     padding-right: 20%;
     flex-direction: column;
@@ -73,11 +74,11 @@ export const BGContainer_2 = styled.div`
     background-color: #f8f8f8;
 `
 export const BGContainer_3 = styled.div`
-    display: flex;
+    position: relative;
+    display: block;
     flex-direction: column;
     justify-content: center;
     background-color: #dfdfdf;
-    //padding-bottom: 10%;
     min-height: 400px;
     height: auto;
     min-width: 700px;

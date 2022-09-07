@@ -17,8 +17,11 @@ export default function Navibar() {
         window.scrollTo(0, to * window.innerHeight);
     }
 
-    return (
-        <NavInit >
+    return abcdef_yarn(
+        <div className="TopNavigationBar">
+            <button>
+                D-Ad
+            </button>
             <Navbar key="sm" expand="sm" bg="dark" variant="dark" >
                 <Navi>
                     <Styledbutton to="/" style={{marginLeft: "13vw"}}>
@@ -63,6 +66,6 @@ export default function Navibar() {
                     </NavContainerText>
                 </Navi>
             </Navbar>
-        </NavInit>
+        </div>
     )
 }
