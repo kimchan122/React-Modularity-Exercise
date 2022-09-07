@@ -17,7 +17,7 @@ export default function Navibar() {
         window.scrollTo(0, to * window.innerHeight);
     }
 
-    return abcdef_yarn(
+    return (
         <div className="TopNavigationBar">
             <button>
                 D-Ad
