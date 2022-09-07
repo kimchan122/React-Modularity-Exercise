@@ -59,31 +59,38 @@ export function Rectangle3(props) {
 export const BGContainer = styled.div`
     display: flex;
     height: 100vh;
+    min-width:700px;
 `
 export const BGContainer_2 = styled.div`
     height: 100vh;
-    min-width: 1000px;
+    min-width: 700px;
     position: relative;
+    display: flex;
     padding-left : 20%;
     padding-right: 20%;
+    flex-direction: column;
     justify-content: center;
     background-color: #f8f8f8;
 `
 export const BGContainer_3 = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #dfdfdf;
+    //padding-bottom: 10%;
     min-height: 400px;
-    height: 90vh;
-    min-width: 1000px;
+    height: auto;
+    min-width: 700px;
+    padding-top: 5%;
     padding-left : 20%;
     padding-right: 20%;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #dfdfdf;
+    padding-bottom: 5%;
 `
 
 export const BGContainer_4 = styled.div`
     min-height: 50px;
     height: 10vh;
-    min-width: 1000px;
+    min-width: 700px;
     background-color: #d0d0d0;
 `
 
@@ -143,5 +150,4 @@ export const Web3text = styled.div`
     margin-top: 300px;
     padding-left : 20%;
     padding-right: 20%;
-
 `

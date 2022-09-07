@@ -53,7 +53,7 @@ const SSI = () => {
                     <SSItext3>
                         In Web3.0, the overall industry structure will be transformed into the form of DAO in the future as not only platform companies but also all participants share profits fairly. 
                         What's important here is that digital identities, especially SSI, are key to enabling Web3.0.
-                         It's important because it's all about decentralization and data privacy. More details will be explained later.
+                         It's important because it's all about decentralization and data privacy.
                     </SSItext3>
                 </Web3text>
 

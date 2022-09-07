@@ -21,7 +21,7 @@ export default function Navibar() {
         <NavInit >
             <Navbar key="sm" expand="sm" bg="dark" variant="dark" >
                 <Navi>
-                    <Styledbutton to="/" style={{marginLeft: "9.5vw"}}>
+                    <Styledbutton to="/" style={{marginLeft: "13vw"}}>
                         <LogoTitle>
                             D-Ad
                         </LogoTitle>
