@@ -53,7 +53,6 @@ export const Explaintext = styled.div`
 
 export const Businessicon = styled.div`
     width: 100%;
-    padding-top: 5%;
     display: inline-block;
     word-break: break-word;
     text-align: left;

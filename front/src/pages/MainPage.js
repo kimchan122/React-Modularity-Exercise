@@ -1,6 +1,8 @@
 import React from "react";
 import Adsicon from "../assets/ads.png";
 import tagicon from "../assets/tag.png";
+import nft from "../assets/nfticon.png";
+import sbt from "../assets/sbt.png";
 import { Rectangle1, Rectangle2, Rectangle3, BGContainer, BGContainer_2, BGContainer_3, BGContainer_4, BGContainer_Icon } from '../components/commons/BGContainer';
 import { BGText, Business, BGTextContainer, Businesstext, Ourexplain, Explaintext, Businessicon, Contacttext } from '../components/commons/BGText';
 import { Fade } from 'react-awesome-reveal';
@@ -53,26 +55,52 @@ const MainPage = () => {
             </BGContainer_2>
             <BGContainer_3>
                 <Businessicon style={{ fontWeight: "800" }}>
-                    OUR BUSINESS
+                    PROJECT
                 </Businessicon>
                 <Business >
                     <BGContainer_Icon src={Adsicon} style={{ justifyContent: "left" }} />
-                    <Businesstext style={{ gridColumn: "2/3" }}>D-Ad</Businesstext>
+                    <Businesstext style={{ gridColumn: "2/3" , justifyContent:"space-between" }}>D-Ad
+                        <FaGithub onClick={e => window.open('https://github.com/kimchan122/D-Ad-MVP', '_black')} size="50" style={{ marginLeft: "30px", lineHeight: "10vh", height: "10vh"}} />
+                    </Businesstext>
                     <Businesstext style={{ gridColumn: "2/3" }}>
-                        Using ZKP, users are shown targeted advertisements their interests while minimizing data leakage, and rewarded accordingly.
+                    Use zkp to targeted advertisement the user's personal data without worrying about leakage, and reward the user.
                     </Businesstext>
                 </Business>
                 <Business>
                     <BGContainer_Icon src={tagicon} style={{ justifyContent: "left" }} />
-                    <Businesstext style={{gridColumn: "2/3" }}>Soul Tag</Businesstext>
-                    <Businesstext style={{ gridColumn: "2/3" }}>
+                    <Businesstext style={{gridColumn: "2/3", justifyContent:"space-between"  }}>
+                        Soul Tag
+                        <FaGithub onClick={e => window.open('https://github.com/Unchain-ETHSeoul', '_black')} size="50" style={{ marginLeft: "30px", lineHeight: "10vh", height: "10vh", alignItems: "center" }} />
+                    </Businesstext>
+                    <Businesstext style={{ gridRow: "2/3",gridColumn: "2/3" }}>
                         Ticket to ensure anonymity and authenticate yourself using sbt.
+                    </Businesstext>
+                    <BGContainer_Icon style={{ justifyContent: "left" }} />
+                </Business>
+                <Business>
+                <BGContainer_Icon src={sbt} style={{  justifyContent: "left" }} />
+                    <Businesstext style={{gridColumn: "2/3", justifyContent:"space-between"  }}>
+                        ZK-SBT
+                        <FaGithub onClick={e => window.open('https://github.com/Unchain68/ZK-SBT', '_black')} size="50" style={{ marginLeft: "30px", lineHeight: "10vh", height: "10vh", alignItems: "center" }} />
+                    </Businesstext>
+                    <Businesstext style={{ gridRow: "3/4", gridColumn: "2/3"}}>
+                        developers are provided with the tooling to issue zero-knowledge proof soul bound tokens (ZK SBTs) and verify them on-chain.
+                    </Businesstext>
+                </Business>
+                <Business>
+                    <BGContainer_Icon src={nft} style={{ justifyContent: "left" }} />
+                    <Businesstext style={{gridColumn: "2/3", justifyContent:"space-between"  }}>
+                        PSP 34 NFT
+                        <FaGithub onClick={e => window.open('https://github.com/Unchain68/psp34_contract', '_black')} size="50" style={{ marginLeft: "30px", lineHeight: "10vh", height: "10vh", alignItems: "center" }} />
+                    </Businesstext>
+                    <Businesstext style={{ gridRow: "3/4", gridColumn: "2/3"}}>
+                    Enables users to create and deploy NFT in PSP34 standard.
                     </Businesstext>
                 </Business>
             </BGContainer_3>
             <BGContainer_4>
                 <Contacttext>
-                    <FaGithub onClick={e => window.open('https://github.com/kimchan122/D-Ad-MVP', '_black')} size="50" style={{ lineHeight: "10vh", height: "10vh", alignItems: "center" }} />
+                    {/* <FaGithub onClick={e => window.open('https://github.com/kimchan122/D-Ad-MVP', '_black')} size="50" style={{ lineHeight: "10vh", height: "10vh", alignItems: "center" }} /> */}
                 </Contacttext>
             </BGContainer_4>
         </div>
