@@ -34,7 +34,7 @@ export const BGText2 = styled.div`
 export const Ourexplain = styled.div`
     width: 100%;
     //margin-top: 50px;
-    padding-top: 5%;
+    padding-top: 3%;
     display: block;
     word-break:break-word;
     text-align: left;
@@ -45,6 +45,7 @@ export const Ourexplain = styled.div`
 export const Explaintext = styled.div`
     width: 100%;
     padding-top: 1%;
+    
     display: block;
     word-break:break-word;
     text-align: left;
@@ -85,7 +86,11 @@ export const Businesstext = styled.div`
 export const Contacttext = styled.div`
     position: relative;
     display: flex;
-    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom:3%;
+    justify-content: start;
     font-size: 2rem;
     font-weight: 800;
 `
@@ -122,4 +127,18 @@ export const SSItext3 = styled.div`
     margin-bottom: 50px;
     font-size: 1.5em;
     font-weight: 400;
+`
+
+export const TeamIntro = styled.div`
+    display: grid;
+    padding-bottom: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    grid-gap: 30px;
+    grid-template-columns: auto; 
+    grid-template-rows: auto;
+    position: relative;
+    word-break: break-word;
+    justify-items: center;
+
 `

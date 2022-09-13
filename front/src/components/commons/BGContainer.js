@@ -89,7 +89,7 @@ export const BGContainer_3 = styled.div`
 
 export const BGContainer_4 = styled.div`
     min-height: 50px;
-    height: 10vh;
+    height: auto;
     min-width: 700px;
     background-color: #d0d0d0;
 `
@@ -150,4 +150,12 @@ export const Web3text = styled.div`
     margin-top: 300px;
     padding-left : 20%;
     padding-right: 20%;
+`
+
+export const Team_Icon = styled.img`
+    ${(props) => props.src};
+    max-width: 130px;
+    max-height: 130px;
+    margin-top: 20px;
+    border-radius: 70%;
 `
