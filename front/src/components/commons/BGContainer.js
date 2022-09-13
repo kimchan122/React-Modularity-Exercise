@@ -72,26 +72,12 @@ export const BGContainer_2 = styled.div`
     justify-content: center;
     background-color: #f8f8f8;
 `
-export const BGContainer_3 = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #dfdfdf;
-    //padding-bottom: 10%;
-    min-height: 400px;
-    height: auto;
-    min-width: 700px;
-    padding-top: 5%;
-    padding-left : 20%;
-    padding-right: 20%;
-    padding-bottom: 5%;
-`
 
-export const BGContainer_4 = styled.div`
+export const BGContainer_3 = styled.div`
     min-height: 50px;
     height: auto;
     min-width: 700px;
-    background-color: #d0d0d0;
+    background-color: #dfdfdf;
 `
 
 export const BGWhiteContainer = styled.div`
