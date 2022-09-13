@@ -23,7 +23,7 @@ export default function Navibar() {
                 <Navi>
                     <Styledbutton to="/" style={{marginLeft: "13vw"}}>
                         <LogoTitle>
-                            D-Ad
+                            0xCatbox
                         </LogoTitle>
                     </Styledbutton>
                     <NavContainerText>
