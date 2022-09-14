@@ -134,7 +134,7 @@ export const TeamIntro = styled.div`
     padding-bottom: 5%;
     padding-left: 20%;
     padding-right: 20%;
-    grid-gap: 30px;
+    grid-gap: 10px;
     grid-template-columns: auto; 
     grid-template-rows: auto;
     position: relative;
@@ -142,3 +142,9 @@ export const TeamIntro = styled.div`
     justify-items: center;
 
 `
+
+export const TeamName = styled.div`
+    font-weight: 600;
+    font-size: 1.3rem;
+`
+
