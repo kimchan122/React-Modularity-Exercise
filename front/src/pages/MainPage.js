@@ -4,12 +4,12 @@ import tagicon from "../assets/tag.png";
 import nft from "../assets/nfticon.png";
 import sbt from "../assets/sbt.png";
 import hwang from "../assets/hwang.png";
-import gyung from "../assets/gyung.png";
+import gyeong from "../assets/gyeong.png";
 import chan from "../assets/chan.jpeg";
 import hoon from "../assets/hoon.png";
 import gyu from "../assets/gyu.png";
 import { Rectangle1, Rectangle2, Rectangle3, BGContainer, BGContainer_2, BGContainer_3, BGContainer_4, BGContainer_Icon, Team_Icon } from '../components/commons/BGContainer';
-import { BGText, Business, TeamIntro, Businesstext, Ourexplain, Explaintext, Businessicon, Contacttext } from '../components/commons/BGText';
+import { BGText, Business, TeamIntro, Businesstext, Ourexplain, Explaintext, Businessicon, Contacttext, TeamName } from '../components/commons/BGText';
 import { Fade } from 'react-awesome-reveal';
 import '../App.css';
 import { FaGithub } from 'react-icons/fa';
@@ -21,7 +21,6 @@ const MainPage = () => {
                 <Rectangle1 style={{ background: '#efefef' }} />
                 <Rectangle2 style={{ background: '#c1c1c1' }} />
                 <Rectangle3 style={{ background: '#afafaf' }} />
-
                 <BGText>
                     <Fade duration="3000" triggerOnce={true}>
                         Privacy is the power
@@ -64,25 +63,30 @@ const MainPage = () => {
                 </Contacttext>
                 <TeamIntro>
                     <Team_Icon  
-                        src={gyung} style={{ gridRow: "1/2",gridColumn: "1/2"}}
+                        src={gyeong} style={{ gridRow: "1/2",gridColumn: "1/2"}}
                         onClick={e => window.open('https://www.notion.so/J-G-Yeom-fc244e9b9bfd49aa86c824af05660c11', '_black')}
-                    />
+                    /> 
+                    <TeamName>Jaegyeong Yeom</TeamName>
                     <Team_Icon  
                         src={chan} style={{ gridRow:"1/2"}}
                         onClick={e => window.open('https://www.notion.so/Chan-Kim-82275b2eedcc443295abfebcc14f1892', '_black')}
                     />
+                    <TeamName>Chan Kim</TeamName>
                     <Team_Icon  
                         src={hoon} style={{ gridRow:"1/2"}}
                         onClick={e => window.open('https://www.notion.so/YoungHoon-Cha-2943d2681dc543f88c91012a24f1b9c6', '_black')}
                     />
+                    <TeamName>YoungHoon Cha</TeamName>
                     <Team_Icon
-                        src={hwang} style={{ gridRow: "2/3",gridColumn: "1/3"}}
+                        src={hwang} style={{ gridRow: "3/4",gridColumn: "1/3"}}
                         onClick={e => window.open('https://www.notion.so/Jihwang-Kim-9d12ed713faf4373ae63b11112b625c5', '_black')}
                     />
+                    <TeamName style={{ gridRow: "4/5", gridColumn: "1/3"}}>Jihwang Kim</TeamName>
                     <Team_Icon  
-                        src={gyu} style={{gridRow: "2/3", gridColumn: "2/4"}}
+                        src={gyu} style={{gridRow: "3/4", gridColumn: "2/4"}}
                         onClick={e => window.open('https://www.notion.so/Mingyu-Song-5711e14d073a401cbf9eebcff51817a7', '_black')}
                     />
+                    <TeamName style={{ gridRow: "4/5", gridColumn: "2/4"}}>Mingyu Song</TeamName>
                 </TeamIntro>
             </BGContainer_3>
         </div>

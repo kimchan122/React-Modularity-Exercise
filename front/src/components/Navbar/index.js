@@ -41,7 +41,7 @@ export default function Navibar() {
                         >
                             <Offcanvas.Header closeButton >
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
-                                    UNCHAIN
+                                    0xCatbox
                                 </Offcanvas.Title>
                                 <OffcanvasSNS>
                                     <FaDiscord size="24" style={{ marginRight: '10px' }} />
